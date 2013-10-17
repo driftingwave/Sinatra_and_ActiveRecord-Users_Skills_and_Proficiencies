@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1><%= @user.name %>, congratulations on your growth as a dev!</h1><br>
+
+  <form id="new_skill">
+    <label class="label" for="name">Name of new skill</label>
+    <input type="text" name="skill_name" placeholder="e.g., CSS" value="<%= @new_skill_name%>"><br>
+
+    <label class="label" for="skill_type">Type of skill:</label>
+    <label class="label" for="skill_type">
+      Technical<input type="radio" name="technical_skill" value="<%= @new_skill_context %>"><br>
+      Creative<input type="radio" name="creative_skill" value="<%= @new_skill_context %>"><br>
+    </label><br><br>
+
+    <div class="submit"><input type="submit" value="Add Skill"></div>
+  </form>
+
+</div>
